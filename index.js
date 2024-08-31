@@ -3,8 +3,10 @@ import ImageKit from "imagekit";
 import cors from "cors";
 import { ClerkExpressRequireAuth, ClerkExpressWithAuth } from '@clerk/clerk-sdk-node'
 import mongoose from "mongoose";
+import dotenv from "dotenv";
 import Chat from "./models/chats.js";
 import UserChats from "./models/userChats.js"
+dotenv.config({});
 // import path from "path";
 // import url, { fileURLToPath } from "url";
 const port =process.env.PORT || 3000;
